@@ -36,7 +36,6 @@ public class Ingreso extends JFrame {
 			}
 		});
 	}
-
 	/**
 	 * Create the frame.
 	 */
@@ -79,6 +78,7 @@ public class Ingreso extends JFrame {
 		panel.add(textField);
 		textField.setColumns(10);
 		btnIngresar.addActionListener(new ActionListener() {
+			
 			public void actionPerformed(ActionEvent e) {
 				ChatClient c = new ChatClient();
 				c.launchFrame();

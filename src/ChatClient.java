@@ -14,7 +14,7 @@ public class ChatClient{
 		sendButton = new JButton("Send");
 		quitButton = new JButton("Quit");
 		
-		//agrego receptor de eventos
+		//agrego los receptores de eventos
 		sendButton.addActionListener(new SendHandler());
 		quitButton.addActionListener(new QuitHandler());
 	}
@@ -37,12 +37,6 @@ public class ChatClient{
 		frame.pack();
 		frame.setVisible(true);
 	}
-	
-	/*public static void main(String[] args){
-		
-		ChatClient c = new ChatClient();
-		c.launchFrame();
-	}*/
 	
 	private class SendHandler implements ActionListener{
 		
